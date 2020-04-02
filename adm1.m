@@ -30,6 +30,15 @@ for i = 1:T
     resP_teor(1,i) = tmp(1);
     resP_teor(2,i) = tmp(2);
 end
+
+%переписать теорию
+resP_teor_tmp = zeros(2, T);
+tmp_vec = start_vec;
+for i = 1:T %в цикле до количества шагов    
+    resP_teor_tmp(1,i) = tmp_vec(1); %записали для 0
+    resP_teor_tmp(2,i) = tmp_vec(2); %записали для 1
+    tmp_vec = tmp_vec * P; %tmp вектор на матрицу
+end
     
 % plot 
 figure;
