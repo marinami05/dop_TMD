@@ -37,10 +37,10 @@ hold on;
 grid on;
 xlabel('t');
 ylabel('p');
-plt1 = plot(1:T, resP(1,:), '-b', 'LineWidth', 2); plt1_lable = 'p_1';
-plt2 = plot(1:T, resP_teor(1,:), '-r', 'LineWidth', 2); plt2_lable = 'p_1 theor';
-plt3 = plot(1:T, resP(2,:), '-g', 'LineWidth', 2); plt3_lable = 'p_2';
-plt4 = plot(1:T, resP_teor(2,:), '-yellow', 'LineWidth', 2); plt4_lable = 'p_2 theor';
+plt1 = plot(1:T, resP(1,:), '-b', 'LineWidth', 2); plt1_lable = 'p_0';
+plt2 = plot(1:T, resP_teor(1,:), '-r', 'LineWidth', 2); plt2_lable = 'p_0 theor';
+plt3 = plot(1:T, resP(2,:), '-g', 'LineWidth', 2); plt3_lable = 'p_1';
+plt4 = plot(1:T, resP_teor(2,:), '-yellow', 'LineWidth', 2); plt4_lable = 'p_1 theor';
 legend([plt1;plt2;plt3; plt4], plt1_lable, plt2_lable, plt3_lable, plt4_lable)
 
 
